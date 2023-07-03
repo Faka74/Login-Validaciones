@@ -2,197 +2,358 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    background-color: #1f2023;
+    font-family: 'Kaisei Decol', serif;
+    background-color: #301E67;
 }
 
-.containerFlex {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-}
-
-.fondoMitadIzquierda {
-    width: 50%;
-    height: 100%;
-    background-color: #1f2023;
-}
-
-.fondoMitadDerecha {
-    background-image: url(./img/FondoDerechoPractico.png);
-    background-size: cover;
-    width: 50%;
-    height: 100%;
-}
-
-.containerCoderMitadIzquierda {
+.containerMayor {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30%;
-}
-
-.imgCoderMitadIzquierda {
-    width: 280px;
-    height: 60px;
-}
-
-.containerFormCorreo {
     width: 100%;
+    height: 100vh;
+}
+
+.container {
+    background-color: #8ea0e9;
+    box-shadow: 9px 6px 14px 6px rgba(0, 0, 0, 0.43);
+    -webkit-box-shadow: 9px 6px 14px 6px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 9px 6px 14px 6px rgba(0, 0, 0, 0.43);
+    border-radius: 15px 15px 15px 15px;
     display: flex;
-    flex-direction: column;
-    margin: 0px 0px 15px 20px;
+    width: 60%;
+    height: 75%;
+    line-height: 1.7;
 }
 
-.containerFormContraseña {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 0px 0px 15px 20px;
+.mitadIzquierda {
+    width: 50%;
 }
 
-.inputContainerForm {
-    width: 90%;
-    height: 42px;
-    background-color: #2e2f36;
-    border: none;
-    border-radius: 8px;
-    outline: none;
+.mitadDerecha {
+    width: 50%;
+    background-image: url(./img/Fondo.jpg);
+    background-size: 100% 105%;
+    border-radius: 0px 15px 15px 0px;
 }
 
-input::placeholder {
-    color: #b1b6ba;
-}
-
-.labelLogin {
-    color: white;
-    font-size: 13px;
-    padding-bottom: 10px;
-}
-
-.containerButtonSubmit {
-    width: 100%;
-    margin-left: 23px;
-}
-
-.btnSubmit {
-    width: 91%;
-    height: 47px;
-    border-radius: 8px;
-    background-color: #cbdd5f;
-    font-size: 15px;
-    color: rgb(64, 64, 64);
-    transition: all 0.2s;
-}
-
-.btnSubmit a {
-    text-decoration: none;
-    color: #2e2f36;
-}
-
-.btnSubmit:hover {
-    background-color: #eaff6a;
-}
-
-.pOculto {
-    visibility: hidden;
-}
-
-input,
-textarea {
-    color: #b1b6ba;
-    padding-left: 10px;
-}
-
-.pCentrados {
+.containerTitulos {
     text-align: center;
-    padding-right: 30px;
-    padding-left: 30px;
-    line-height: 2;
+}
+
+.containerTitulos h1 {
+    font-size: 40px;
+    font-weight: 500;
+    transition: all 1s;
+}
+
+.containerTitulos h1:hover {
+    letter-spacing: 3px;
+}
+
+.containerTitulos h2 {
+    font-weight: 200;
+}
+
+.containerForm {
+    display: flex;
+    justify-content: center;
+}
+
+.subContainerForm {
+    width: 75%;
+}
+
+.inputEstilo {
+    height: 35px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.textDecoration {
+    text-decoration: none;
+}
+
+.textDecoration:hover {
+    color: white;
+}
+
+input {
+    transition: all 0.1s;
+}
+
+.divDeEmail,
+.divDeContraseña {
+    text-align: center;
+}
+
+.divDeEmail,
+.divDeContraseña,
+label {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerIniciarSesion {
+    display: flex;
+    justify-content: end;
+}
+
+.containerIniciarSesion p {
+    margin-top: 8px;
     cursor: pointer;
 }
 
-.pCentrados a {
-    color: #dff665;
+.btnEstilos {
+    font-family: 'Kaisei Decol', serif;
+    margin-top: 10px;
+    height: 30px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    transition: all .3s ease;
     text-decoration: none;
 }
 
-.pYellow {
-    color: #dff665;
+.btnEstilos:hover {
+    transform: scale(0.95);
+    background-color: rgb(83, 67, 188);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
 }
 
-.pWhite {
-    color: white;
+button {
+    font-family: 'Kaisei Decol', serif;
+    width: 130px;
+    height: 45px;
+    border-radius: 10px;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    transition: all .3s ease;
 }
 
-.containerFormCorreo2 {
-    width: 91%;
-    display: flex;
-    flex-direction: column;
-    margin: 0px 0px 30px 30px;
+button:hover {
+    transform: scale(0.95);
+    background-color: rgb(83, 67, 188);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
 }
 
-.inputContainerForm2 {
-    height: 42px;
-    background-color: #2e2f36;
-    border: none;
-    border-radius: 8px;
+#clickParrafo {
+    margin-top: 20px;
 }
 
-.colorBlanco {
-    color: white;
-    margin-bottom: 25px;
+.containerCrearCuenta {
+    text-align: center;
+    margin-top: 15px;
 }
 
-.marginIzquierdo {
-    margin-left: 30px;
+.containerCrearCuenta a {
+    text-decoration: none;
 }
 
-div h2 {
-    font-weight: 300;
-    font-size: 20px;
-}
-
-.colorGris {
-    color: #b1b6ba;
-}
-
-.fuenteCorreo {
-    font-size: 13px;
-    margin-bottom: 10px;
-}
-
-#ocultarInfo {
+.informacionOculta {
+    width: 70%;
+    margin-left: 60px;
+    font-family: 'Kaisei Decol', serif;
+    font-size: 12px;
     display: none;
 }
 
-@media screen and (max-width:1024px) {
-    .fondoMitadDerecha {
+.informacionOculta h2 {
+    font-weight: lighter;
+}
+
+.cancelar {
+    font-size: 15px;
+    text-align: end;
+    cursor: pointer;
+}
+
+.cancelar {
+    text-align: center;
+    width: 110px;
+    height: 25px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    font-size: 15px;
+    transition: all .5s ease;
+}
+
+.cancelar:hover {
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+.cancelar:first-child {
+    margin-right: 20px;
+}
+
+.end {
+    display: flex;
+    justify-content: end;
+}
+
+#inputEmailOculto {
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+#crearCuenta {
+    color: rgb(117, 9, 100);
+    cursor: pointer;
+}
+
+.containerRegistrar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    line-height: 0.3;
+    display: none;
+}
+
+.divDeEmailRegistrar {
+    width: 200px;
+}
+
+
+.btnCrearCuenta {
+    width: 130px;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    transition: all .3s ease;
+}
+
+.btnCrearCuenta:hover {
+    transform: scale(0.95);
+    background-color: rgb(83, 67, 188);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+.inputEstiloOculto {
+    width: 90%;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.containerCrearCuenta a {
+    color: rgb(117, 9, 100);
+    font-weight: 700;
+    display: none;
+}
+
+.containerBtnCrearCuenta {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    margin-right: 65px;
+}
+
+.btnEstilosDos {
+    cursor: pointer;
+    width: 110px;
+    height: 25px;
+    border-radius: 10px;
+    padding: 23px 10px 4px 10px;
+    text-align: center;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    font-size: 15px;
+    transition: all .5s ease;
+}
+
+.btnEstilosDos:hover {
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+.divMitadIzquierda {
+    text-align: center;
+    width: 50%;
+}
+
+.divMitadDerecha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+@media (max-width: 1200px) {
+
+    .divMitadDerecha {
+        width: 50%;
+    }
+
+.divMitadDerecha p{
+    padding: 15px;
+}
+
+    .divMitadIzquierda {
+        width: 50%;
+    }
+
+    .mitadDerecha {
         display: none;
     }
 
-    .fondoMitadIzquierda {
-        width: 90%;
-        margin-left: 50px;
-        height: 80%;
-        background-color: #1f2023;
+    .mitadIzquierda {
+        width: 100%;
     }
-
 }
 
-@media screen and (max-width:768px) {
-    .fondoMitadIzquierda {
+@media (max-width: 540px) {
+
+    .divMitadIzquierda {
+        width: 50%;
+    }
+
+    .divMitadDerecha a {
+        padding: 15px;
+    }
+
+    .divMitadDerecha {
+        width: 50%;
+    }
+
+    .divMitadDerecha {
+        display: flex;
+        justify-content: center;
+    }
+
+    .containerCrearCuenta {
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .container {
+        line-height: 1.6;
         width: 80%;
-        margin-left: 50px;
-        height: 80%;
-        background-color: #1f2023;
-    }
-}
-@media screen and (max-width:480px) {
-    .fondoMitadIzquierda {
-        width: 90%;
-        margin-left: 20px;
-        height: 80%;
-        background-color: #1f2023;
     }
 }
